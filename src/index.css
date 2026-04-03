@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-noir-black: #0a0a0a;
+  --color-noir-white: #ffffff;
+  --color-noir-gray: #f5f5f5;
+  --color-noir-blue: #0D52FF;
+  --color-noir-border: #e5e5e5;
+  
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-noir-black bg-noir-white selection:bg-noir-blue selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight uppercase;
+  }
+}
+
+@layer components {
+  /* Prevent focus outline but maintain accessibility ring for inputs */
+  input:focus, button:focus {
+    @apply outline-none ring-0;
+  }
+}
