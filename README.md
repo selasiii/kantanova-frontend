@@ -4,15 +4,32 @@ Kantanova is a multi-sided e-commerce and logistics platform digitalizing Ghana'
 
 The visual identity embodies a **"Brutalist Luxury"** aesthetic integrating stark monochrome contrasts with an electric blue accent.
 
-## 🚀 Tech Stack
+## 🚀 System Architecture & Implementation
 
-- **Framework**: React 18+ (bootstrapped with [Vite](https://vitejs.dev/))
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
-- **State Management (Server)**: `@tanstack/react-query`
-- **State Management (Client)**: `zustand`
-- **Routing**: `react-router-dom` v6
-- **Network Client**: `axios`
+Kantanova is a high-performance, multi-sided commerce engine. The implementation is divided into four operational pillars, all adhering to the **"Noir"** (Brutalist Luxury) design system:
+
+### 1. Customer Experience (The Core Engine)
+- **Status**: Operational
+- **Highlights**: Zustand-based persistent cart, escrow-protected order tracking, and a high-contrast catalog with advanced filtering.
+
+### 2. Vendor Storefront (Inventory & Fulfillment)
+- **Status**: Operational
+- **Highlights**: "Inventory Injection" CRUD system, real-time sales performance metrics, and a dedicated dispatch management hub.
+
+### 3. Rider Logistics (Delivery Network)
+- **Status**: Operational
+- **Highlights**: Presence-based (Online/Offline) protocol, real-time delivery task feed, and mobile-optimized fulfillment workflows without GPS dependency.
+
+### 4. Admin Command Center (Governance & Oversight)
+- **Status**: Operational
+- **Highlights**: Platform-wide KPI monitoring, identity lifecycle control (Suspend/Activate), and transactional audit trails.
+
+## 🛠️ Technical Stack
+- **Framework**: React 18 + Vite (TypeScript)
+- **Styling**: Tailwind CSS v4 + Noir Design Tokens
+- **State**: Zustand (Client) + TanStack Query (Server)
+- **Security**: Role-based routing + Protected Security Contexts
+
 
 ## 📁 Repository Structure
 
